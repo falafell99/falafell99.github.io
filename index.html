@@ -20,10 +20,97 @@
                 <li><a href="projects.html" class="nav-link">Projects</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
     <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Rafael Ibayev</span>
+                    </h1>
+                    <p class="hero-subtitle">Computer Science Student @ ELTE</p>
+                    <p class="hero-description">
+                        Building AI, robotics, and real-time systems. Olympiad medalist. Passionate about solving complex engineering challenges through software-hardware integration.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="projects.html" class="btn btn-primary">View My Work</a>
+                        <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/falafell99" class="social-link" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rafael-ibayev-17889b334/" class="social-link" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:rafael@example.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&h=800&fit=crop" alt="Abstract technology visual" class="hero-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a highly motivated Computer Science student at ELTE with a deep passion for solving complex engineering problems. My focus areas include AI, robotics, anomaly detection, and bio-signal processing.
+                        </p>
+                        <p>
+                            As an International STEM Olympiad medalist with gold medals in mathematics and tech engineering, I combine theoretical knowledge with practical implementation. I excel at building end-to-end solutions that integrate software and hardware seamlessly.
+                        </p>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3>Languages</h3>
+                            <div class="skill-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">C#</span>
+                                <span class="tag">Java</span>
+                                <span class="tag">C</span>
+                                <span class="tag">Haskell</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Specializations</h3>
+                            <div class="skill-tags">
+                                <span class="tag accent">Computer Vision</span>
+                                <span class="tag accent">Machine Learning</span>
+                                <span class="tag accent">Robotics</span>
+                                <span class="tag accent">Signal Processing</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Tools & Frameworks</h3>
+                            <div class="skill-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Streamlit</span>
+                                <span class="tag">Arduino</span>
+                                <span class="tag">OpenCV</span>
+                                <span class="tag">TensorFlow</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="achievements">
             <div class="container">
                 <h2 class="section-title">International Achievements</h2>
@@ -38,7 +125,7 @@
                     </div>
                     <div class="achievement-card">
                         <div class="medal-container">
-                            <img src="techgold.jpg" alt="Gold Medal Tech" class="medal-photo">
+                            <img src="techgold.jpg" alt="Gold Medal Tech & Engineering" class="medal-photo">
                         </div>
                         <h3>Gold Medal</h3>
                         <p>International STEM Olympiad</p>
@@ -54,7 +141,7 @@
                     </div>
                     <div class="achievement-card">
                         <div class="medal-container">
-                            <img src="amobronze.jpeg" alt="Bronze Medal AMO" class="medal-photo">
+                            <img src="amobronze.jpg" alt="Bronze Medal AMO" class="medal-photo">
                         </div>
                         <h3>Bronze Medal</h3>
                         <p>American Math Olympiad</p>
@@ -68,33 +155,76 @@
             <div class="container">
                 <h2 class="section-title">Featured Projects</h2>
                 <div class="projects-preview">
+                    
                     <div class="project-preview-card">
                         <div class="project-card-image">
-                            <img src="fraud.jpg" alt="Fraud Detection" class="card-img">
+                            <img src="fraud.jpg" alt="Fraud Detection System" class="card-img">
                         </div>
                         <div class="project-badge">Machine Learning</div>
-                        <h3>Credit Card Fraud</h3>
+                        <h3>Credit Card Fraud Detection</h3>
+                        <p>Dual-pipeline system for real-time anomaly detection with Isolation Forest and RiverML.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>Streamlit</span>
+                        </div>
                         <a href="projects.html#fraud" class="project-link">View Project →</a>
                     </div>
+                    
                     <div class="project-preview-card">
                         <div class="project-card-image">
-                            <img src="robot.jpg" alt="Robotic Arm" class="card-img">
+                            <img src="robot.jpg" alt="Robotic Arm Prototype" class="card-img">
                         </div>
                         <div class="project-badge">Robotics</div>
-                        <h3>Robotic Arm</h3>
+                        <h3>Bio-Signal Robotic Arm</h3>
+                        <p>Prosthetic arm with bio-signal sensor integration for precise motor actuation.</p>
+                        <div class="tech-stack">
+                            <span>Arduino</span>
+                            <span>Python</span>
+                            <span>Signal Processing</span>
+                        </div>
                         <a href="projects.html#prosthetic" class="project-link">View Project →</a>
                     </div>
+                    
                     <div class="project-preview-card">
                         <div class="project-card-image">
-                            <img src="hci.jpg" alt="HCI System" class="card-img">
+                            <img src="hci.jpg" alt="HCI System Visual" class="card-img">
                         </div>
                         <div class="project-badge">Computer Vision</div>
-                        <h3>HCI System</h3>
+                        <h3>Real-Time HCI System</h3>
+                        <p>Hand-tracking and gesture detection with optimized latency using MediaPipe.</p>
+                        <div class="tech-stack">
+                            <span>OpenCV</span>
+                            <span>MediaPipe</span>
+                            <span>Python</span>
+                        </div>
                         <a href="projects.html#hci" class="project-link">View Project →</a>
                     </div>
+                    
+                </div>
+                <div class="view-all-projects">
+                    <a href="projects.html" class="btn btn-primary">View All Projects</a>
                 </div>
             </div>
         </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Let's Build Something Amazing</h2>
+                <p>I'm always interested in collaborating on innovative projects and solving complex engineering challenges.</p>
+                <a href="contact.html" class="btn btn-primary">Start a Conversation</a>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Rafael Ibayev. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
