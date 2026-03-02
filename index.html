@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael Ibayev | CS Portfolio</title>
+    <title>Projects | Rafael Ibayev</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Lora:wght@600;700;800&display=swap" rel="stylesheet">
@@ -16,8 +16,8 @@
                 <span class="logo-text">Rafael</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -29,164 +29,187 @@
     </nav>
 
     <main>
-        <section class="hero">
+        <section class="projects-header">
             <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title">
-                        <span class="gradient-text">Rafael Ibayev</span>
-                    </h1>
-                    <p class="hero-subtitle">Computer Science Student @ Gábor Dénes University</p>
-                    <p class="hero-description">
-                        Building AI, robotics, and real-time systems. Olympiad medalist. Passionate about solving complex engineering challenges through software-hardware integration.
-                    </p>
-                    <div class="hero-cta">
-                        <a href="projects.html" class="btn btn-primary">View My Work</a>
-                        <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
-                    </div>
-                    <div class="social-icons">
-                        <a href="https://github.com/falafell99" class="social-link" target="_blank" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/rafael-ibayev-17889b334/" class="social-link" target="_blank" title="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="mailto:rafael@example.com" class="social-link" title="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-visual">
-                    <div class="hero-image">
-                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&h=800&fit=crop" alt="Technology Visual" class="hero-img">
-                    </div>
-                </div>
+                <h1>Selected Projects</h1>
+                <p class="subtitle">A collection of my work in AI, robotics, and computer vision</p>
             </div>
         </section>
 
-        <section class="about">
+        <section class="projects-section">
             <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>
-                            I'm a highly motivated Computer Science student at Gábor Dénes University in Budapest with a deep passion for solving complex engineering problems. My focus areas include AI, robotics, anomaly detection, and bio-signal processing.
-                        </p>
-                        <p>
-                            As an International STEM Olympiad medalist with gold medals in mathematics and tech engineering, I combine theoretical knowledge with practical implementation. I'm currently working on projects like "ORATOR" for the GDE MIT Hackathon 2026.
-                        </p>
-                    </div>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h3>Languages</h3>
-                            <div class="skill-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">C#</span>
-                                <span class="tag">Java</span>
-                                <span class="tag">C</span>
-                                <span class="tag">JavaScript</span>
+                <div class="project-item" id="fraud">
+                    <div class="project-grid">
+                        <div class="project-image">
+                            <img src="fraud.png" alt="Fraud Detection System" class="project-img">
+                            <div class="image-overlay">
+                                <span class="overlay-label">Machine Learning</span>
                             </div>
                         </div>
-                        <div class="skill-category">
-                            <h3>Specializations</h3>
-                            <div class="skill-tags">
-                                <span class="tag accent">Computer Vision</span>
-                                <span class="tag accent">Machine Learning</span>
-                                <span class="tag accent">Robotics</span>
-                                <span class="tag accent">Anomaly Detection</span>
+                        <div class="project-details">
+                            <div class="project-header">
+                                <span class="project-tag ml">Machine Learning</span>
+                                <h2>Credit Card Fraud Detection</h2>
+                                <p class="project-year">2026</p>
+                            </div>
+                            <div class="project-description">
+                                <p>
+                                    Engineered a dual-pipeline system to handle class imbalance in high-dimensional streaming data. This project benchmarks Scikit-learn against RiverML for real-time anomaly detection using Isolation Forest algorithms.
+                                </p>
+                                <p>
+                                    The system includes a Streamlit prototype for visualizing detection patterns and monitoring financial loss mitigation in real-time.
+                                </p>
+                            </div>
+                            <div class="project-tech">
+                                <h4>Technologies</h4>
+                                <div class="tech-badges">
+                                    <span class="tech-badge">Python</span>
+                                    <span class="tech-badge">Scikit-learn</span>
+                                    <span class="tech-badge">RiverML</span>
+                                    <span class="tech-badge">Streamlit</span>
+                                    <span class="tech-badge">Isolation Forest</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/falafell99" class="project-link-btn" target="_blank">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section class="achievements">
-            <div class="container">
-                <h2 class="section-title">International Achievements</h2>
-                <div class="achievements-grid">
-                    <div class="achievement-card">
-                        <div class="medal-container">
-                            <img src="mathgold.jpg" alt="Gold Medal Math" class="medal-photo">
+                <div class="project-item" id="prosthetic">
+                    <div class="project-grid">
+                        <div class="project-image">
+                            <img src="robot.jpg" alt="Bio-Signal Robotic Arm" class="project-img">
+                            <div class="image-overlay">
+                                <span class="overlay-label">Robotics</span>
+                            </div>
                         </div>
-                        <h3>Gold Medal</h3>
-                        <p>International STEM Olympiad</p>
-                        <span class="meta">Mathematics</span>
+                        <div class="project-details">
+                            <div class="project-header">
+                                <span class="project-tag robotics">Robotics</span>
+                                <h2>Bio-Signal Robotic Prosthetic Arm</h2>
+                                <p class="project-year">2023 – 2024</p>
+                            </div>
+                            <div class="project-description">
+                                <p>
+                                    Designed and built a functional prosthetic arm that transitions from computer vision-based tracking to direct bio-signal sensor integration for more intuitive control.
+                                </p>
+                                <div class="project-video-container" style="margin-top: 20px;">
+                                    <p style="font-weight: bold; margin-bottom: 10px;">Project Demo Video:</p>
+                                    <video width="100%" controls style="border-radius: 12px; border: 1px solid var(--border-color);">
+                                        <source src="robot-demo.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="project-tech">
+                                <h4>Technologies</h4>
+                                <div class="tech-badges">
+                                    <span class="tech-badge">Arduino IDE</span>
+                                    <span class="tech-badge">Python</span>
+                                    <span class="tech-badge">OpenCV</span>
+                                    <span class="tech-badge">Signal Processing</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/falafell99" class="project-link-btn" target="_blank">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="achievement-card">
-                        <div class="medal-container">
-                            <img src="techgold.jpg" alt="Gold Medal Tech & Engineering" class="medal-photo">
+                </div>
+
+                <div class="project-item" id="hci">
+                    <div class="project-grid">
+                        <div class="project-image">
+                            <img src="hci.png" alt="Real-Time HCI System" class="project-img">
+                            <div class="image-overlay">
+                                <span class="overlay-label">Computer Vision</span>
+                            </div>
                         </div>
-                        <h3>Gold Medal</h3>
-                        <p>International STEM Olympiad</p>
-                        <span class="meta">Tech & Engineering</span>
+                        <div class="project-details">
+                            <div class="project-header">
+                                <span class="project-tag cv">Computer Vision</span>
+                                <h2>Real-Time Human-Computer Interaction (HCI) System</h2>
+                                <p class="project-year">2024</p>
+                            </div>
+                            <div class="project-description">
+                                <p>
+                                    Developed an advanced image processing pipeline for hand-tracking and gesture detection with optimized latency. Built using MediaPipe for hand detection and OpenCV for image processing.
+                                </p>
+                            </div>
+                            <div class="project-tech">
+                                <h4>Technologies</h4>
+                                <div class="tech-badges">
+                                    <span class="tech-badge">OpenCV</span>
+                                    <span class="tech-badge">MediaPipe</span>
+                                    <span class="tech-badge">NumPy</span>
+                                    <span class="tech-badge">Python</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/falafell99" class="project-link-btn" target="_blank">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="achievement-card">
-                        <div class="medal-container">
-                            <img src="codingbronze.jpg" alt="Bronze Medal Coding" class="medal-photo">
+                </div>
+
+                <div class="project-item" id="monorail">
+                    <div class="project-grid">
+                        <div class="project-image">
+                            <img src="monorail.png" alt="Monorail System" class="project-img">
+                            <div class="image-overlay">
+                                <span class="overlay-label">Engineering</span>
+                            </div>
                         </div>
-                        <h3>Bronze Medal</h3>
-                        <p>International STEM Olympiad</p>
-                        <span class="meta">Coding</span>
-                    </div>
-                    <div class="achievement-card">
-                        <div class="medal-container">
-                            <img src="amobronze.jpeg" alt="Bronze Medal AMO" class="medal-photo">
+                        <div class="project-details">
+                            <div class="project-header">
+                                <span class="project-tag engineering">Engineering</span>
+                                <h2>Monorail Transportation System</h2>
+                                <p class="project-year">2023</p>
+                            </div>
+                            <div class="project-description">
+                                <p>
+                                    Participated in an engineering hackathon where I designed a functional monorail prototype with focus on structural design and load distribution.
+                                </p>
+                            </div>
+                            <div class="project-tech">
+                                <h4>Technologies</h4>
+                                <div class="tech-badges">
+                                    <span class="tech-badge">CAD Design</span>
+                                    <span class="tech-badge">Research & Analysis</span>
+                                    <span class="tech-badge">Engineering Constraints</span>
+                                </div>
+                            </div>
                         </div>
-                        <h3>Bronze Medal</h3>
-                        <p>American Math Olympiad</p>
-                        <span class="meta">2024</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="featured-projects">
+        <section class="more-projects">
             <div class="container">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="projects-preview">
-                    
-                    <div class="project-preview-card">
-                        <div class="project-card-image">
-                            <img src="fraud.png" alt="Fraud Detection System" class="card-img">
-                        </div>
-                        <div class="project-badge">Machine Learning</div>
-                        <h3>Credit Card Fraud Detection</h3>
-                        <p>Dual-pipeline system for real-time anomaly detection with Isolation Forest and RiverML.</p>
-                        <a href="projects.html#fraud" class="project-link">View Project →</a>
+                <h2 class="section-title">Other Notable Work</h2>
+                <div class="mini-projects-grid">
+                    <div class="mini-project">
+                        <h3><i class="fas fa-brain"></i> ML & AI</h3>
+                        <p>Various machine learning experiments and algorithm implementations</p>
                     </div>
-                    
-                    <div class="project-preview-card">
-                        <div class="project-card-image">
-                            <img src="robot.jpg" alt="Bio-Signal Robotic Arm" class="card-img">
-                        </div>
-                        <div class="project-badge">Robotics</div>
-                        <h3>Bio-Signal Robotic Arm</h3>
-                        <p>Prosthetic arm with bio-signal sensor integration for precise motor actuation.</p>
-                        <a href="projects.html#prosthetic" class="project-link">View Project →</a>
+                    <div class="mini-project">
+                        <h3><i class="fas fa-code"></i> Software</h3>
+                        <p>Full-stack development with React, Flutter, and backend systems</p>
                     </div>
-                    
-                    <div class="project-preview-card">
-                        <div class="project-card-image">
-                            <img src="hci.png" alt="HCI Vision System" class="card-img">
-                        </div>
-                        <div class="project-badge">Computer Vision</div>
-                        <h3>Real-Time HCI System</h3>
-                        <p>Hand-tracking and gesture detection with optimized latency using MediaPipe.</p>
-                        <a href="projects.html#hci" class="project-link">View Project →</a>
+                    <div class="mini-project">
+                        <h3><i class="fas fa-microchip"></i> Hardware</h3>
+                        <p>Arduino and Raspberry Pi integration projects</p>
                     </div>
-                    
                 </div>
-                <div class="view-all-projects">
-                    <a href="projects.html" class="btn btn-primary">View All Projects</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta-section">
-            <div class="container">
-                <h2>Let's Build Something Amazing</h2>
-                <p>I'm always interested in collaborating on innovative projects and solving complex engineering challenges.</p>
-                <a href="contact.html" class="btn btn-primary">Start a Conversation</a>
             </div>
         </section>
     </main>
@@ -200,5 +223,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
