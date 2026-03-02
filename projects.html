@@ -36,49 +36,12 @@
             </div>
         </section>
 
-        <section class="skills-table-section">
-            <div class="container">
-                <details>
-                    <summary><strong>Click to view Technical Proficiency Table</strong> (Detailed Skills Overview)</summary>
-                    <table class="data-table">
-                        <caption>Technical Skillset & Project Application</caption>
-                        <thead>
-                            <tr>
-                                <th scope="col">Skill Category</th>
-                                <th scope="col">Technologies</th>
-                                <th scope="col">Proficiency Level</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Machine Learning</td>
-                                <td>Python, Scikit-learn, RiverML</td>
-                                <td>Advanced</td>
-                            </tr>
-                            <tr>
-                                <td>Robotics</td>
-                                <td>Arduino, Signal Processing</td>
-                                <td>Intermediate</td>
-                            </tr>
-                            <tr>
-                                <td>Computer Vision</td>
-                                <td>OpenCV, MediaPipe</td>
-                                <td>Advanced</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </details>
-            </div>
-        </section>
-
         <section class="projects-section">
             <div class="container">
                 <div class="project-item" id="fraud">
                     <div class="project-grid">
                         <div class="project-image">
-                            <a href="fraud.jpg" target="_blank">
-                                <img src="fraud.jpg" alt="Fraud Detection System" class="project-img thumbnail">
-                            </a>
+                            <img src="fraud.jpg" alt="Fraud Detection System" class="project-img">
                             <div class="image-overlay">
                                 <span class="overlay-label">Machine Learning</span>
                             </div>
@@ -90,8 +53,12 @@
                                 <p class="project-year">2026</p>
                             </div>
                             <div class="project-description">
-                                <p>Engineered a dual-pipeline system to handle class imbalance in high-dimensional streaming data. Benchmarking Scikit-learn against RiverML for real-time anomaly detection.</p>
-                                <p>The system includes a Streamlit prototype for visualizing detection patterns and monitoring financial loss mitigation in real-time.</p>
+                                <p>
+                                    Engineered a dual-pipeline system to handle class imbalance in high-dimensional streaming data. This project benchmarks Scikit-learn against RiverML for real-time anomaly detection using Isolation Forest algorithms.
+                                </p>
+                                <p>
+                                    The system includes a Streamlit prototype for visualizing detection patterns and monitoring financial loss mitigation in real-time. Key focus was on handling the trade-off between false positives and false negatives in production environments.
+                                </p>
                             </div>
                             <div class="project-tech">
                                 <h4>Technologies</h4>
@@ -100,6 +67,7 @@
                                     <span class="tech-badge">Scikit-learn</span>
                                     <span class="tech-badge">RiverML</span>
                                     <span class="tech-badge">Streamlit</span>
+                                    <span class="tech-badge">Isolation Forest</span>
                                 </div>
                             </div>
                             <div class="project-links">
@@ -114,9 +82,7 @@
                 <div class="project-item" id="prosthetic">
                     <div class="project-grid">
                         <div class="project-image">
-                            <a href="robot.jpg" target="_blank">
-                                <img src="robot.jpg" alt="Bio-Signal Robotic Arm" class="project-img thumbnail">
-                            </a>
+                            <img src="robot.jpg" alt="Bio-Signal Robotic Arm" class="project-img">
                             <div class="image-overlay">
                                 <span class="overlay-label">Robotics</span>
                             </div>
@@ -128,15 +94,29 @@
                                 <p class="project-year">2023 – 2024</p>
                             </div>
                             <div class="project-description">
-                                <p>Designed a prosthetic arm with direct bio-signal sensor integration (EMG) for natural muscle control and motor actuation.</p>
+                                <p>
+                                    Designed and built a functional prosthetic arm that transitions from computer vision-based tracking to direct bio-signal sensor integration for more intuitive control.
+                                </p>
+                                <p>
+                                    Implemented real-time signal processing pipeline to interpret electromyography (EMG) sensor data for precise motor actuation.
+                                </p>
+                                
+                                <div class="project-video-container" style="margin-top: 20px;">
+                                    <p style="font-weight: bold; margin-bottom: 10px;">Project Demo Video:</p>
+                                    <video width="100%" controls style="border-radius: 12px; border: 1px solid var(--border-color);">
+                                        <source src="robot-demo.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
                             </div>
                             <div class="project-tech">
                                 <h4>Technologies</h4>
                                 <div class="tech-badges">
                                     <span class="tech-badge">Arduino IDE</span>
                                     <span class="tech-badge">Python</span>
+                                    <span class="tech-badge">OpenCV</span>
                                     <span class="tech-badge">Signal Processing</span>
-                                    <span class="tech-badge">Hardware</span>
+                                    <span class="tech-badge">Hardware Design</span>
                                 </div>
                             </div>
                             <div class="project-links">
@@ -159,11 +139,13 @@
                         <div class="project-details">
                             <div class="project-header">
                                 <span class="project-tag cv">Computer Vision</span>
-                                <h2>Real-Time Human-Computer Interaction</h2>
+                                <h2>Real-Time Human-Computer Interaction (HCI) System</h2>
                                 <p class="project-year">2024</p>
                             </div>
                             <div class="project-description">
-                                <p>Developed an advanced image processing pipeline for hand-tracking and gesture detection with optimized latency using MediaPipe.</p>
+                                <p>
+                                    Developed an advanced image processing pipeline for hand-tracking and gesture detection with optimized latency. Built using MediaPipe for hand detection and OpenCV for image processing.
+                                </p>
                             </div>
                             <div class="project-tech">
                                 <h4>Technologies</h4>
@@ -171,23 +153,47 @@
                                     <span class="tech-badge">OpenCV</span>
                                     <span class="tech-badge">MediaPipe</span>
                                     <span class="tech-badge">NumPy</span>
+                                    <span class="tech-badge">Python</span>
                                 </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/falafell99" class="project-link-btn" target="_blank">
+                                    <i class="fab fa-github"></i> View on GitHub
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section class="video-demo-section">
-            <div class="container">
-                <h2 class="section-title">Project Video Demonstration</h2>
-                <div class="video-wrapper">
-                    <video width="100%" controls>
-                        <source src="demo.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p class="caption">Source: demo.mp4 (Demonstration of HCI System latency optimization)</p>
+                <div class="project-item" id="monorail">
+                    <div class="project-grid">
+                        <div class="project-image">
+                            <img src="robot.jpg" alt="Monorail System" class="project-img">
+                            <div class="image-overlay">
+                                <span class="overlay-label">Engineering</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-header">
+                                <span class="project-tag engineering">Engineering</span>
+                                <h2>Monorail Transportation System</h2>
+                                <p class="project-year">2023</p>
+                            </div>
+                            <div class="project-description">
+                                <p>
+                                    Participated in an engineering hackathon where I designed a functional monorail prototype with focus on structural design and load distribution.
+                                </p>
+                            </div>
+                            <div class="project-tech">
+                                <h4>Technologies</h4>
+                                <div class="tech-badges">
+                                    <span class="tech-badge">CAD Design</span>
+                                    <span class="tech-badge">Research & Analysis</span>
+                                    <span class="tech-badge">Engineering Constraints</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -198,11 +204,11 @@
                 <div class="mini-projects-grid">
                     <div class="mini-project">
                         <h3><i class="fas fa-brain"></i> ML & AI</h3>
-                        <p>Machine learning experiments and algorithm implementations</p>
+                        <p>Various machine learning experiments and algorithm implementations</p>
                     </div>
                     <div class="mini-project">
                         <h3><i class="fas fa-code"></i> Software</h3>
-                        <p>Full-stack development with React and backend systems</p>
+                        <p>Full-stack development with React, Flutter, and backend systems</p>
                     </div>
                     <div class="mini-project">
                         <h3><i class="fas fa-microchip"></i> Hardware</h3>
@@ -216,6 +222,10 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2026 Rafael Ibayev. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
         </div>
     </footer>
 
