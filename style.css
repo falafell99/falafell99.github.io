@@ -1463,3 +1463,142 @@ a:visited {
 /* Стили для таблицы из Пункта 4 */
 table th { font-family: var(--font-mono); background-color: var(--bg-tertiary); }
 table td { border: 1px solid var(--border-color); }
+
+
+
+CSS
+/* ================================
+   PREMIUM TABLE DESIGN (ELTE CRITERIA)
+   ================================ */
+
+/* Стиль самого спойлера */
+details.project-metrics {
+    margin: var(--spacing-xl) 0;
+    background: rgba(26, 32, 44, 0.4); /* Полупрозрачный фон */
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all var(--transition-normal);
+}
+
+details.project-metrics[open] {
+    border-color: var(--accent-primary);
+    box-shadow: 0 10px 30px rgba(74, 144, 226, 0.1);
+}
+
+/* Кнопка-заголовок */
+summary.metrics-title {
+    padding: var(--spacing-md) var(--spacing-lg);
+    cursor: pointer;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: var(--accent-primary);
+    list-style: none; /* Убираем стандартную стрелочку */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+summary.metrics-title::before {
+    content: '→';
+    transition: transform 0.3s ease;
+}
+
+details[open] summary.metrics-title::before {
+    transform: rotate(90deg);
+}
+
+/* Сама таблица */
+.table-container {
+    padding: 0 var(--spacing-lg) var(--spacing-lg);
+    overflow-x: auto;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+}
+
+.styled-table caption {
+    padding: 15px;
+    font-family: var(--font-serif);
+    color: var(--text-secondary);
+    font-style: italic;
+    text-align: left;
+}
+
+.styled-table th {
+    background: rgba(74, 144, 226, 0.1);
+    color: var(--text-primary);
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 2px solid var(--accent-primary);
+}
+
+.styled-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-secondary);
+}
+
+.styled-table tr:hover td {
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text-primary);
+}
+
+.styled-table tr:last-child td {
+    border-bottom: none;
+}
+
+
+:root {
+    --bg-primary: #0f1419;
+    --bg-secondary: #1a202c;
+    --accent-primary: #4a90e2;
+    --text-primary: #f7fafc;
+    --border-color: #2d3748;
+    --font-mono: 'Space Mono', monospace;
+    --spacing-lg: 2rem;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg-primary); color: var(--text-primary); font-family: sans-serif; line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 var(--spacing-lg); }
+
+/* НАВИГАЦИЯ И ГЛАВНОЕ */
+.navbar { position: sticky; top: 0; z-index: 1000; background: rgba(15, 20, 25, 0.9); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-color); padding: 1rem 0; }
+.nav-wrapper { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 var(--spacing-lg); }
+
+/* СТИЛЬ ТАБЛИЦЫ ДЛЯ ПУНКТА 4 */
+.project-metrics { margin: 2rem 0; background: var(--bg-secondary); padding: 1rem; border-radius: 12px; border: 1px solid var(--border-color); }
+.metrics-title { cursor: pointer; font-family: var(--font-mono); color: var(--accent-primary); font-weight: bold; }
+.styled-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+.styled-table th, .styled-table td { padding: 12px; border: 1px solid var(--border-color); text-align: left; }
+.styled-table th { background: rgba(74, 144, 226, 0.1); }
+
+/* СТИЛИ ДЛЯ ПЕЧАТИ (ПУНКТ 19) */
+@media print {
+    .navbar, .btn, .social-icons, .footer, .hamburger, .hero-cta, video, .project-links { display: none !important; }
+    body { background: white !important; color: black !important; }
+    .container { width: 100% !important; max-width: none !important; }
+}
+
+.prosthetic-media-container video { max-height: 400px; width: auto; border-radius: 12px; border: 1px solid #334155; }
+
+
+.hero { padding: 4rem 0; display: flex; align-items: center; }
+.gradient-text { background: linear-gradient(135deg, #10b981 0%, #059669 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.project-preview-card { background: var(--bg-secondary); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: 12px; margin-bottom: 1rem; }
+.achievement-card { background: rgba(74, 144, 226, 0.1); border: 1px solid var(--border-color); padding: 1.5rem; border-radius: 12px; text-align: center; }
+.medal-photo { width: 100%; height: 180px; object-fit: contain; }
+.btn { padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: bold; text-transform: uppercase; cursor: pointer; }
+.btn-primary { background: var(--accent-primary); color: white; border: none; }
+
+
+a:visited { color: #a0aec0; } 
+.about-text p a { text-decoration: underline; } 
