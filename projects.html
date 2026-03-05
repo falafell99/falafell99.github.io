@@ -3,42 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Rafael Ibayev</title>
+    <title>Projects – Portfolio of Rafael Ibayev</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Lora:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-wrapper">
-            <div class="logo-section">
-                <div class="logo">RI</div>
-                <span class="logo-text">Rafael</span>
+    <header>
+        <nav class="navbar">
+            <div class="nav-wrapper">
+                <div class="logo-section">
+                    <div class="logo">RI</div>
+                    <span class="logo-text">Rafael</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html" class="nav-link active">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <main>
         <section class="projects-header">
             <div class="container">
                 <h1>Selected Projects</h1>
                 <p class="subtitle">Complete documentation of my work in AI, robotics, and computer vision</p>
+                
+                <details style="margin-top: 2rem; background: var(--bg-secondary); padding: 1rem; border-radius: 8px; border: 1px solid var(--border-color);">
+                    <summary style="cursor: pointer; font-family: var(--font-mono); font-weight: bold; color: var(--accent-primary);">
+                        View Technical Project Metrics
+                    </summary>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: 1rem;">
+                        <caption style="padding: 10px; color: var(--text-secondary); font-style: italic;">Performance Comparison of AI Models</caption>
+                        <thead>
+                            <tr>
+                                <th style="padding: 10px; border: 1px solid var(--border-color); text-align: left;">Metric</th>
+                                <th style="padding: 10px; border: 1px solid var(--border-color); text-align: left;">ORATOR</th>
+                                <th style="padding: 10px; border: 1px solid var(--border-color); text-align: left;">Fraud Detection</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid var(--border-color);">Latency</td>
+                                <td style="padding: 10px; border: 1px solid var(--border-color);">< 200ms</td>
+                                <td style="padding: 10px; border: 1px solid var(--border-color);">< 50ms</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 10px; border: 1px solid var(--border-color);">Accuracy</td>
+                                <td style="padding: 10px; border: 1px solid var(--border-color);">94%</td>
+                                <td style="padding: 10px; border: 1px solid var(--border-color);">98.2%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </details>
             </div>
         </section>
 
         <section class="projects-section">
             <div class="container">
-                
-                <div class="project-item" id="orator">
+                <article class="project-item" id="orator">
                     <div class="project-grid">
-                        <div class="project-image">
+                        <figure class="project-image">
                             <img src="orator.png" alt="ORATOR Project" class="project-img">
-                        </div>
+                        </figure>
                         <div class="project-details">
                             <div class="project-header">
                                 <span class="project-tag ml">Education Track</span>
@@ -48,125 +77,27 @@
                             <div class="project-description">
                                 <p>Bilingual (EN/HU) public speaking preparation lab designed for practicing before presentations, thesis defenses, and interviews. It combines impromptu topic generation, real-time speech analysis, and AI coaching.</p>
                             </div>
-                            <div class="project-tech">
-                                <h4>Technologies</h4>
-                                <div class="tech-badges">
-                                    <span class="tech-badge">Python</span>
-                                    <span class="tech-badge">FastAPI</span>
-                                    <span class="tech-badge">Azure AI</span>
-                                </div>
                             </div>
-                            <div class="project-links">
-                                <a href="https://github.com/falafell99/ORATOR99" class="project-link-btn" target="_blank">
-                                    <i class="fab fa-github"></i> View on GitHub
-                                </a>
-                            </div>
-                        </div>
                     </div>
-                </div>
+                </article>
 
-                <div class="project-item" id="prosthetic">
+                <article class="project-item" id="prosthetic">
                     <div class="project-grid">
-                        <div class="project-image">
+                        <figure class="project-image">
                             <img src="robot.jpg" alt="Bio-Signal Robotic Arm" class="project-img">
-                        </div>
+                        </figure>
                         <div class="project-details">
-                            <div class="project-header">
-                                <span class="project-tag robotics">Robotics</span>
-                                <h2>Bio-Signal Robotic Prosthetic Arm</h2>
-                                <p class="project-year">2023 – 2024</p>
-                            </div>
-                            <div class="project-description">
-                                <p>Designed a functional prosthetic arm that transitions from vision-based tracking to direct EMG sensor integration for intuitive control.</p>
-                                <div class="prosthetic-media-container">
-                                    <video class="vertical-video" controls muted playsinline>
-                                        <source src="robot-demo.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                            </div>
-                            <div class="project-tech">
-                                <h4>Technologies</h4>
-                                <div class="tech-badges">
-                                    <span class="tech-badge">Arduino IDE</span>
-                                    <span class="tech-badge">Signal Processing</span>
-                                </div>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/falafell99/robotic-arm" class="project-link-btn" target="_blank">
-                                    <i class="fab fa-github"></i> View Repository
-                                </a>
+                            <h2>Bio-Signal Robotic Prosthetic Arm</h2>
+                            <p class="project-year">2023 – 2024</p>
+                            <p>Designed a functional prosthetic arm that transitions from vision-based tracking to direct EMG sensor integration for intuitive control.</p>
+                            <div class="prosthetic-media-container">
+                                <video class="vertical-video" controls muted playsinline> <source src="robot-demo.mp4" type="video/mp4">
+                                </video>
                             </div>
                         </div>
                     </div>
+                </article>
                 </div>
-
-                <div class="project-item" id="fraud">
-                    <div class="project-grid">
-                        <div class="project-image">
-                            <img src="fraud.png" alt="Fraud Detection System" class="project-img">
-                        </div>
-                        <div class="project-details">
-                            <div class="project-header">
-                                <span class="project-tag ml">Machine Learning</span>
-                                <h2>Credit Card Fraud Detection</h2>
-                                <p class="project-year">2026</p>
-                            </div>
-                            <div class="project-description">
-                                <p>Engineered a dual-pipeline system to handle class imbalance in high-dimensional streaming data. Benchmarked Scikit-learn against RiverML for real-time anomaly detection.</p>
-                            </div>
-                            <div class="project-tech">
-                                <h4>Technologies</h4>
-                                <div class="tech-badges">
-                                    <span class="tech-badge">Python</span>
-                                    <span class="tech-badge">Isolation Forest</span>
-                                </div>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/falafell99" class="project-link-btn" target="_blank">
-                                    <i class="fab fa-github"></i> GitHub
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item" id="hci">
-                    <div class="project-grid">
-                        <div class="project-image">
-                            <img src="hci.jpg" alt="Real-Time HCI System" class="project-img">
-                        </div>
-                        <div class="project-details">
-                            <div class="project-header">
-                                <span class="project-tag cv">Computer Vision</span>
-                                <h2>Real-Time HCI System</h2>
-                                <p class="project-year">2024</p>
-                            </div>
-                            <div class="project-description">
-                                <p>Hand-tracking and gesture detection pipeline using MediaPipe and OpenCV. Optimized for real-time performance.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-item" id="monorail">
-                    <div class="project-grid">
-                        <div class="project-image">
-                            <img src="monorail.png" alt="Monorail System" class="project-img">
-                        </div>
-                        <div class="project-details">
-                            <div class="project-header">
-                                <span class="project-tag engineering">Engineering</span>
-                                <h2>Monorail Transportation System</h2>
-                                <p class="project-year">2024</p>
-                            </div>
-                            <div class="project-description">
-                                <p>Prototype design of an urban monorail system for Baku, focusing on structural stability and load distribution.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
     </main>
 

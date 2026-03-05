@@ -1424,3 +1424,42 @@ a:hover {
         width: 100%;
     }
 }
+
+body { font-size: 1rem; }
+
+/* Пункт 16: Visited ссылки выглядят иначе для контраста */
+a:visited {
+    color: var(--accent-tertiary);
+    opacity: 0.8;
+}
+
+/* Пункт 18: Ссылки в текстовых блоках должны быть подчеркнуты (навсегда) */
+.about-text p a, .project-description p a {
+    text-decoration: underline;
+}
+
+/* Пункт 19: СТИЛИ ДЛЯ ПЕЧАТИ (ОБЯЗАТЕЛЬНО) */
+@media print {
+    /* Скрываем всё лишнее: меню, кнопки, видео, иконки */
+    .navbar, .btn, .social-icons, .footer, .hamburger, .hero-cta, video, .project-links {
+        display: none !important;
+    }
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    .container {
+        width: 100% !important;
+        max-width: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    h1, h2, h3 { color: black !important; }
+    p { color: #333 !important; }
+    /* Показываем ссылки в виде текста рядом с ними */
+    a:after { content: " (" attr(href) ")"; font-size: 0.8rem; }
+}
+
+/* Стили для таблицы из Пункта 4 */
+table th { font-family: var(--font-mono); background-color: var(--bg-tertiary); }
+table td { border: 1px solid var(--border-color); }

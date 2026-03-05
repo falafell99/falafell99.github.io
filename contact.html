@@ -3,87 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Rafael Ibayev</title>
+    <title>Contact – Portfolio of Rafael Ibayev</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Lora:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-wrapper">
-            <div class="logo-section">
-                <div class="logo">RI</div>
-                <span class="logo-text">Rafael</span>
+    <header>
+        <nav class="navbar">
+            <div class="nav-wrapper">
+                <div class="logo-section"><div class="logo">RI</div></div>
+                <ul class="nav-menu"><li><a href="index.html">Home</a></li><li><a href="projects.html">Projects</a></li><li><a href="contact.html" class="active">Contact</a></li></ul>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="projects.html" class="nav-link">Projects</a></li>
-                <li><a href="contact.html" class="nav-link active">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <main>
         <section class="contact-header">
-            <div class="container">
-                <h1>Get in Touch</h1>
-                <p class="subtitle">Let's collaborate and create something amazing together</p>
-            </div>
+            <div class="container"><h1>Get in Touch</h1></div>
         </section>
 
         <section class="contact-section">
             <div class="container">
                 <div class="contact-grid">
-                    <!-- Contact Form -->
                     <div class="contact-form-wrapper">
                         <h2>Send me a message</h2>
-                        <form class="contact-form" id="contactForm">
+                        <form class="contact-form" id="contactForm" method="post" action="mailto:raffaelwhat@gmail.com" enctype="text/plain">
                             <div class="form-group">
-                                <label for="name">Your Name</label>
-                                <input type="text" id="name" name="name" required placeholder="John Doe">
-                            </div>
+                                <label for="name">Your Name</label> <input type="text" id="name" name="name" required maxlength="100" placeholder="John Doe"> </div>
 
                             <div class="form-group">
                                 <label for="email">Email Address</label>
-                                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                                <input type="email" id="email" name="email" required maxlength="100" placeholder="your@email.com">
                             </div>
 
                             <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <input type="text" id="subject" name="subject" required placeholder="What is this about?">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="interest">Area of Interest</label>
-                                <div class="radio-group">
+                                <label for="interest">Area of Interest</label> <div class="radio-group">
                                     <label class="radio-label">
-                                        <input type="radio" name="interest" value="development" checked>
+                                        <input type="radio" id="development" name="interest" value="development" checked>
                                         <span>Software Development</span>
                                     </label>
                                     <label class="radio-label">
-                                        <input type="radio" name="interest" value="ai">
+                                        <input type="radio" id="ai_robotics" name="interest" value="ai">
                                         <span>AI / Robotics</span>
-                                    </label>
-                                    <label class="radio-label">
-                                        <input type="radio" name="interest" value="other">
-                                        <span>Other</span>
                                     </label>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" required placeholder="Tell me about your project..." rows="6"></textarea>
+                                <label for="message">Message</label> <textarea id="message" name="message" required maxlength="1000" placeholder="Tell me about your project..." rows="6"></textarea>
                             </div>
 
                             <div class="form-group checkbox-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="consent" required>
+                                <label class="checkbox-label" for="consent"> <input type="checkbox" id="consent" name="consent" required>
                                     <span>I'm interested in collaboration opportunities</span>
                                 </label>
                             </div>
@@ -91,75 +63,10 @@
                             <button type="submit" class="btn btn-primary btn-large">Send Message</button>
                             <button type="reset" class="btn btn-secondary btn-large">Clear</button>
                         </form>
-                        <div id="formMessage" class="form-message"></div>
                     </div>
-
-                    <!-- Contact Info -->
-                    <div class="contact-info-wrapper">
-                        <div class="contact-info-box">
-                            <h3>Contact Information</h3>
-                            <div class="info-item">
-                                <div class="info-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="info-content">
-                                    <p class="info-label">Email</p>
-                                    <a href="/cdn-cgi/l/email-protection#3a485b5c5c5b5f564d525b4e7a5d575b535614595557"><span class="__cf_email__" data-cfemail="136172757572767f647b726753747e727a7f3d707c7e">[email&#160;protected]</span></a>
-                                </div>
-                            </div>
-
-                            <div class="info-item">
-                                <div class="info-icon">
-                                    <i class="fas fa-phone"></i>
-                                </div>
-                                <div class="info-content">
-                                    <p class="info-label">Phone</p>
-                                    <a href="tel:+36705668417">(+36) 705668417</a>
-                                </div>
-                            </div>
-
-                            <div class="info-item">
-                                <div class="info-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                </div>
-                                <div class="info-content">
-                                    <p class="info-label">Location</p>
-                                    <p>Budapest, Hungary</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="social-box">
-                            <h3>Connect with Me</h3>
-                            <div class="social-links-grid">
-                                <a href="https://github.com/falafell99" class="social-card" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                    <span>GitHub</span>
-                                </a>
-                                <a href="https://www.linkedin.com/in/rafael-ibayev-17889b334/" class="social-card" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                    <span>LinkedIn</span>
-                                </a>
-                                <a href="/cdn-cgi/l/email-protection#daa8bbbcbcbbbfb6adb2bbae9abdb7bbb3b6f4b9b5b7" class="social-card">
-                                    <i class="fas fa-envelope"></i>
-                                    <span>Email</span>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="response-time-box">
-                            <p>
-                                <i class="fas fa-clock"></i>
-                                <strong>Response Time:</strong> I typically respond within 24-48 hours
-                            </p>
-                        </div>
                     </div>
-                </div>
             </div>
         </section>
     </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Rafael Ibayev. All rights reserved.</p>
-            <div class="footer-links"
+</body>
+</html>
