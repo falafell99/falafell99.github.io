@@ -1,239 +1,79 @@
-# 🚀 ПОЛНАЯ ИНСТРУКЦИЯ - Твоё Портфолио ГОТОВО!
+# 🚀 Rafael Ibayev | Computer Science Portfolio
 
-## ✅ Что ты получил?
+Welcome to the repository for my professional portfolio website. This project showcases my work in **AI, Robotics, and High-Performance Systems**. 
 
-Красивый профессиональный сайт портфолио с:
-- ✨ Современным дизайном (глубокий синий + серебристый)
-- 📸 Профессиональными фотографиями везде
-- 🎨 Плавными анимациями и эффектами
-- 📱 Полной адаптивностью на всех устройствах
-- 🟢 Зелёным именем (которое очень крутого выглядит!)
-- 📚 Всеми твоими проектами с описанием
+I am a Computer Science student at **ELTE** (Budapest) and a multiple International STEM Olympiad medalist. My focus is on bridging the gap between complex software algorithms and physical hardware.
 
 ---
 
-## 📂 Какие файлы нужны?
+## ✨ Key Features
 
-Скачай эти 5 файлов:
-```
-1. index.html       (главная страница)
-2. projects.html    (страница проектов)
-3. contact.html     (контакты)
-4. style.css        (стили для сайта)
-5. script.js        (интерактивность)
-```
-
-**Больше ничего не нужно!** Всё работает без сервера.
+* **Premium UI**: A minimalist, high-end design inspired by the "Sawad" aesthetic, featuring Bento Grids and refined typography.
+* **Performance First**: Built with a focus on clean code and fast load times without unnecessary bloat.
+* **Fully Responsive**: Seamless experience across mobile, tablet, and desktop devices.
+* **Project Deep Dives**: Detailed documentation for complex engineering tasks.
 
 ---
 
-## 🎯 БЫСТРЫЙ СТАРТ (3 варианта)
+## 🛠 Tech Stack
 
-### Вариант 1: Локально (просто откроешь в браузере)
-1. Скачай все 5 файлов в одну папку
-2. Открой `index.html` двойным кликом
-3. Готово! Сайт работает локально на твоем ПК
+This portfolio and the projects within it utilize:
 
-### Вариант 2: GitHub Pages (рекомендую - бесплатно)
-Смотри **DEPLOYMENT_GUIDE.md** - там полная инструкция за 3 минуты!
-
-### Вариант 3: Vercel или Netlify (еще проще)
-Смотри **DEPLOYMENT_GUIDE.md**
+* **Frontend**: React, Vite, Tailwind CSS, Framer Motion.
+* **Backend**: Python, FastAPI.
+* **AI & ML**: Microsoft Azure AI Speech, OpenAI API, Gemini API, MediaPipe.
+* **Hardware/CV**: Arduino, OpenCV, Signal Processing.
 
 ---
 
-## 🌐 СРАЗУ ОПУБЛИКОВАТЬ (GitHub Pages)
+## 📚 Featured Projects
 
-### ⚡ БЫСТРАЯ ИНСТРУКЦИЯ (2-3 минуты):
+### 🎙 ORATOR (GDE MIT Hackathon 2026)
+A bilingual (EN/HU) public speaking preparation lab. It uses **Azure AI Speech** for pronunciation assessment and **LLMs** for real-time coaching. It helps users rehearse for thesis defenses and interviews by analyzing pace, fluency, and persuasion quality.
 
-1. **Создай GitHub аккаунт** (если нет)
-   - Зайди на github.com
-   - Sign up → создай аккаунт
+### 💳 Credit Card Fraud Detection
+A real-time anomaly detection system designed to handle class imbalance in high-dimensional streaming data. Built using the **Isolation Forest** algorithm and RiverML.
 
-2. **Создай новый репозиторий**
-   - Нажми "+"
-   - "New repository"
-   - Назови: `username.github.io` (замени username на свой логин)
-   - Выбери "Public"
-   - Create
+### 🦾 Bio-Signal Robotic Arm
+A functional prosthetic limb featuring direct **EMG sensor integration** for motor actuation and a computer vision mode for object tracking.
 
-3. **Загрузи файлы**
-   - Нажми "Add file" → "Upload files"
-   - Перетащи все 5 файлов
-   - "Commit changes"
-
-4. **Включи GitHub Pages**
-   - Settings → Pages
-   - Branch: main → Save
-
-5. **Готово!** ✅
-   - Твой сайт будет по адресу: `https://username.github.io`
-   - (Жди 1-2 минуты, потом зайди по ссылке)
+### 🚆 Baku Monorail System
+An urban transportation prototype focused on structural integrity and autonomous load distribution logic for the city of Baku.
 
 ---
 
-## 📸 ГДЕ ФОТОГРАФИИ?
+## 🏆 International Achievements
 
-### На сайте уже есть фотографии:
-✅ **Главная страница:**
-- Большая красивая фотография разработчика в hero
-
-✅ **Featured Projects (превью):**
-- Фотографии для Fraud Detection
-- Фотографии для Robotic Arm
-- Фотографии для HCI System
-
-✅ **Полная страница проектов:**
-- Монорельс проект
-- Все остальные
-
-### Как заменить на СВОИ фотографии?
-
-**Если у тебя есть скриншоты проектов:**
-
-1. Открой `index.html` в текстовом редакторе (VS Code, Notepad++)
-2. Найди строки с `https://images.unsplash.com/...`
-3. Замени на свои ссылки или пути:
-
-```html
-<!-- Старое: -->
-<img src="https://images.unsplash.com/photo-..." alt="...">
-
-<!-- На своё: -->
-<img src="fraud-detection.jpg" alt="Credit Card Fraud Detection">
-```
-
-**Где положить фотографии?**
-1. Создай папку `images` рядом с HTML файлами
-2. Положи туда свои фото (fraud-detection.jpg, robotic-arm.jpg и т.д.)
-3. В HTML укажи пути: `src="images/fraud-detection.jpg"`
+* **Gold Medal**: International STEM Olympiad – Mathematics
+* **Gold Medal**: International STEM Olympiad – Tech & Engineering
+* **Bronze Medal**: International STEM Olympiad – Coding
+* **Bronze Medal**: American Math Olympiad (2024)
 
 ---
 
-## 🎨 КАСТОМИЗАЦИЯ
+## 📂 File Structure
 
-### Изменить цвета?
-Открой `style.css` и найди раздел `:root {` (в начале):
-```css
---accent-primary: #4a90e2;      /* Синий - измени на свой цвет */
---accent-secondary: #357abd;    /* Темный синий */
---bg-primary: #0f1419;          /* Темный фон */
-```
+```text
+├── index.html       # Home page (Hero, Bento Grid, Achievements)
+├── projects.html    # Detailed project documentation
+├── contact.html     # Contact & networking page
+├── style.css        # Premium Sawad-inspired styling
+├── script.js        # Interactive elements & animations
+└── images/          # Project assets & high-res photos
+🌐 Quick Start & Deployment
+Local Preview: Simply open index.html in any modern web browser.
 
-### Изменить текст?
-Открой `index.html`, `projects.html` или `contact.html` и просто измени текст в HTML.
+GitHub Pages:
 
-### Добавить новый проект?
-1. Открой `projects.html`
-2. Найди блок `<div class="project-item" id="fraud">`
-3. Скопируй и вставь его
-4. Измени текст, описание и ссылки
+Create a repo named username.github.io.
 
----
+Upload all files.
 
-## 📝 ДОКУМЕНТАЦИЯ
+Enable "Pages" in the repository settings.
 
-В папке есть файлы с информацией:
+🔗 Connect with Me
+GitHub: github.com/falafell99
 
-- **DEPLOYMENT_GUIDE.md** - как опубликовать сайт
-- **COLOR_UPDATE.md** - про новые цвета
-- **UPDATES.md** - про обновления (шрифты, фото)
-- **README.md** - общая информация
+LinkedIn: linkedin.com/in/rafael-ibayev-17889b334/
 
----
-
-## 🔗 СОЦИАЛЬНЫЕ ССЫЛКИ
-
-В `index.html` уже добавлены твои ссылки:
-- GitHub: github.com/falafell99
-- LinkedIn: linkedin.com/in/rafael-ibayev-17889b334/
-- Email: raffaelwhat@gmail.com
-
-Они работают и открываются при клике!
-
----
-
-## 📱 ПРОВЕРЬ НА МОБИЛЬНОМ
-
-Твой сайт **полностью адаптивный**:
-1. Открой на смартфоне
-2. Или в браузере нажми F12 → Toggle device toolbar
-3. Попробуй разные размеры экранов
-4. Всё работает отлично! ✓
-
----
-
-## ✨ ПОСЛЕДНИЕ ШТРИХИ
-
-Перед публикацией проверь:
-- [ ] Все ссылки работают
-- [ ] Фотографии загружаются
-- [ ] На мобильном красиво выглядит
-- [ ] Форма контактов работает
-- [ ] Нет опечаток в тексте
-
----
-
-## 🚀 ДАЛЕЕ?
-
-После публикации:
-1. **Поделись ссылкой** - скопируй и отправь друзьям/работодателям
-2. **Добавь в CV** - напиши там ссылку на портфолио
-3. **Обновляй** - добавляй новые проекты по мере создания
-4. **Улучшай** - если хочешь, добавляй видео, больше фото и т.д.
-
----
-
-## 💡 СОВЕТЫ
-
-**Совет 1:** Верифицируй почту в GitHub если публикуешь
-**Совет 2:** Жди 5-10 минут после загрузки - сайт развертывается
-**Совет 3:** Очищай кэш браузера если не видишь изменения
-**Совет 4:** Используй коротко и запоминающийся GitHub логин
-**Совет 5:** Добавляй README в GitHub с описанием проектов
-
----
-
-## ❓ ЕСЛИ ЧТО-ТО НЕ РАБОТАЕТ
-
-**Страница не грузится?**
-- Проверь что имена файлов правильные (точные букв и точки)
-- Жди 10 минут после загрузки на GitHub
-- Очисти кэш браузера (Ctrl+Shift+Del)
-
-**Фотографии не видно?**
-- Если используешь локальные фото - убедись что папка `images` на месте
-- Если используешь Unsplash - интернет должен быть включен
-- Открой браузер консоль (F12) и посмотри ошибки
-
-**Стили не применяются?**
-- Убедись что `style.css` в одной папке с HTML
-- Перезагрузи страницу (Ctrl+F5)
-
----
-
-## 📞 ИТОГОВЫЙ ЧЕКЛИСТ
-
-✅ Все 5 файлов скачаны  
-✅ Файлы в одной папке  
-✅ index.html открывается в браузере  
-✅ Все ссылки работают  
-✅ На мобильном красиво выглядит  
-✅ GitHub Pages настроена (если нужна публикация)  
-✅ Твой сайт доступен по ссылке  
-
----
-
-**Поздравляю!** 🎉
-
-Твоё профессиональное портфолио ГОТОВО!
-
-Это выглядит КРУТОГО, современно и профессионально.
-
-Теперь весь интернет может видеть твои проекты и достижения! 🌍
-
-**Good luck!** 💪
-
----
-
-Если нужна помощь - спроси, помогу с любым вопросом! 😊
+Email: raffaelwhat@gmail.com
